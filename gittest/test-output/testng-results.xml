@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29828" started-at="2019-08-09T15:20:51Z" finished-at="2019-08-09T15:21:21Z">
+  <suite name="Default suite" duration-ms="9136" started-at="2019-08-09T15:25:54Z" finished-at="2019-08-09T15:26:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29828" started-at="2019-08-09T15:20:51Z" finished-at="2019-08-09T15:21:21Z">
+    <test name="Default test" duration-ms="9136" started-at="2019-08-09T15:25:54Z" finished-at="2019-08-09T15:26:04Z">
       <class name="guru99.gittest.NewTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="beforeTest" is-config="true" duration-ms="7347" started-at="2019-08-09T15:20:51Z" finished-at="2019-08-09T15:20:58Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="beforeTest" is-config="true" duration-ms="6272" started-at="2019-08-09T15:25:54Z" finished-at="2019-08-09T15:26:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="f" duration-ms="22371" started-at="2019-08-09T15:20:58Z" finished-at="2019-08-09T15:21:21Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="f" duration-ms="2719" started-at="2019-08-09T15:26:01Z" finished-at="2019-08-09T15:26:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="afterTest" is-config="true" duration-ms="89" started-at="2019-08-09T15:21:21Z" finished-at="2019-08-09T15:21:21Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="afterTest" is-config="true" duration-ms="126" started-at="2019-08-09T15:26:03Z" finished-at="2019-08-09T15:26:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
