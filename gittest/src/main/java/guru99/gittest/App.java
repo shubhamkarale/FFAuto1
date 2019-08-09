@@ -22,6 +22,7 @@ public class App
     	wd.findElement(By.id("SignIn")).click();// click on sign in
 
     	System.out.println("Logged in successfully");
+    	System.out.println("Logged in successfully");
     	
     }
 }
