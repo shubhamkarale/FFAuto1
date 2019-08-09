@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10823" started-at="2019-08-09T15:02:04Z" finished-at="2019-08-09T15:02:15Z">
+  <suite name="Default suite" duration-ms="10107" started-at="2019-08-09T15:12:13Z" finished-at="2019-08-09T15:12:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10823" started-at="2019-08-09T15:02:04Z" finished-at="2019-08-09T15:02:15Z">
-      <class name="guru99.gittest.App">
-        <test-method status="PASS" signature="f()[pri:0, instance:guru99.gittest.App@3e57cd70]" name="f" duration-ms="10798" started-at="2019-08-09T15:02:04Z" finished-at="2019-08-09T15:02:15Z">
+    <test name="Default test" duration-ms="10107" started-at="2019-08-09T15:12:13Z" finished-at="2019-08-09T15:12:23Z">
+      <class name="guru99.gittest.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="beforeTest" is-config="true" duration-ms="6801" started-at="2019-08-09T15:12:13Z" finished-at="2019-08-09T15:12:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="f" duration-ms="3099" started-at="2019-08-09T15:12:20Z" finished-at="2019-08-09T15:12:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- guru99.gittest.App -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.NewTest@7ce6a65d]" name="afterTest" is-config="true" duration-ms="186" started-at="2019-08-09T15:12:23Z" finished-at="2019-08-09T15:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- guru99.gittest.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
