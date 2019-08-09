@@ -3,14 +3,13 @@ package guru99.gittest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
 
-public class App 
-{
- 	
-    	@Test 
-    	 public void f() {
-    	WebDriver wd;
+public class Login {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		WebDriver wd;
     	System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
     	wd = new ChromeDriver();
     	
@@ -28,6 +27,7 @@ public class App
     	wd.findElement(By.id("SignIn")).click();// click on sign in
 
     	System.out.println("Logged in successfully");
-    	
-    }
+
+	}
+
 }
