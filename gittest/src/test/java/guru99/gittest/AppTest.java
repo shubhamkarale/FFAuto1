@@ -19,6 +19,9 @@ public class AppTest {
 	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
 	wd.findElement(By.id("SignInt")).click();// click on sign in
 	  System.out.println("test");
+	  
+	  System.out.println("New Branch");
+	  
   }
   @BeforeTest
   public void beforeTest() {
