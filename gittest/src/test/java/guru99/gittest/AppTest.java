@@ -14,10 +14,10 @@ public class AppTest {
 	  
 	
 	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
-	wd.findElement(By.id("txtPassword")).sendKeys("fit@1235");
+	wd.findElement(By.id("txtPassword")).sendKeys("fit@123");
 	//wd.findElement(By.id("txtUsername")).sendKeys("admin");// enter username
 	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
-	wd.findElement(By.id("SignInt")).click();// click on sign in
+	wd.findElement(By.id("SignIn")).click();// click on sign in
 	  System.out.println("test");
 	  
 	  System.out.println("New Branch");
