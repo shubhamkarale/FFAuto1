@@ -1,38 +1,43 @@
 package guru99.gittest;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest {
+	WebDriver wd;
+  @Test
+  public void f() {
+	  
+	
+	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
+	wd.findElement(By.id("txtPassword")).sendKeys("fit@123");
+	//wd.findElement(By.id("txtUsername")).sendKeys("admin");// enter username
+	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
+	wd.findElement(By.id("SignIn")).click();// click on sign in
+	
+	
+	  System.out.println("test");
+  }
+  @BeforeTest
+  public void beforeTest() {
+	  
+  	System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+  	wd = new ChromeDriver();
+    wd.get("https://demo.fitnessforce.com/ffDefault.aspx");
+//	wd.get("https://demo.fitnessforce.com/ffDefault.aspx");
+    wd.manage().window().maximize();
+    wd.manage().deleteAllCookies();
+  }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+  @AfterTest
+  public void afterTest() {
+	  
+	  System.out.println("Logged in successfully");
+	  wd.close();
+  }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
 }
