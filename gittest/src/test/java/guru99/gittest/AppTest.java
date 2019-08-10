@@ -22,6 +22,8 @@ public class AppTest {
 	  
 	  System.out.println("New Branch");
 	  
+	  System.out.println("New Center Selection");
+	  
   }
   @BeforeTest
   public void beforeTest() {
