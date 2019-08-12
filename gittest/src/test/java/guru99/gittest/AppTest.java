@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 
-public class Fitnessforcetest {
+public class AppTest {
 	WebDriver wd;
 	WebDriverWait wait;
   @Test
