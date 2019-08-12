@@ -14,7 +14,7 @@ public class AppTest {
 	  
 	
 	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
-	wd.findElement(By.id("txtPassword2")).sendKeys("fit@123");
+	wd.findElement(By.id("txtPassword")).sendKeys("fit@123");
 	//wd.findElement(By.id("txtUsername")).sendKeys("admin");// enter username
 	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
 	wd.findElement(By.id("SignIn")).click();// click on sign in
