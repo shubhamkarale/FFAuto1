@@ -30,7 +30,7 @@ public class AppTest {
 	  
   	System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
   	wd = new ChromeDriver();
-    wd.get("https://demotest.fitnessforce.com/ffDefault.aspx");
+    wd.get("https://demo.fitnessforce.com/ffDefault.aspx");
 //	wd.get("https://demo.fitnessforce.com/ffDefault.aspx");
     wd.manage().window().maximize();
     wd.manage().deleteAllCookies();
