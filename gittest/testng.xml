@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests">
-
-   <test name="AppTest">
-	 <classes>
-	   <class name="guru99.gittest.AppTest"/>
-	 </classes>
-   </test>
-   
-  <test name="EnquiryCreation">
-     <classes>
-       <class name="guru99.gittest.EnquiryCreation"/>
-     </classes>
-   </test>
-   
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+        
+         <packages>
+   	 
+            <package name="fitnessforce" />
+            
+        </packages>
+        
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,4 +1,4 @@
-package guru99.gittest;
+package fitnessforce;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
