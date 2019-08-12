@@ -20,7 +20,7 @@ public class EnquiryCreation {
 	WebDriver wd;
 	WebDriverWait wait;
   @Test
-  public void LoginAppTest() throws IOException {
+  public void EnquiryCreation() throws IOException {
 	  
 	
 	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
