@@ -10,7 +10,7 @@ import org.testng.annotations.AfterTest;
 public class NewTest {
 	WebDriver wd;
   @Test
-  public void f() {
+  public void LoginNewTest() {
 	  
 	
 	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
