@@ -5,7 +5,7 @@
     <classes>
       <class name="guru99.gittest.AppTest">
         <methods>
-          <include name="f"/>
+          <include name="LoginAppTest"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
