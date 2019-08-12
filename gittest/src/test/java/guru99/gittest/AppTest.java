@@ -70,7 +70,7 @@ public class AppTest {
 	
 	wd.findElement(By.id("btnSaveEnq")).click();
 	
-	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("LabelIDType");
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("LabelIDType")));
 	
 	System.out.println("Enquiry Created Successfully");
 	  
