@@ -2,6 +2,11 @@ package guru99.gittest;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +21,7 @@ public class AppTest {
 	WebDriver wd;
 	WebDriverWait wait;
   @Test
-  public void LoginAppTest() {
+  public void LoginAppTest() throws IOException {
 	  
 	
 	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
@@ -33,9 +38,9 @@ public class AppTest {
 	
 	wd.get("https://demo.fitnessforce.com/Transaction/membercommon_ff.aspx?formname=EnquirySearch&pagetype=createenquiry&mode=enquiry&TenantId=460&BillAtId=460&BillForId=460&searchtext=05405455");
 	
-	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_Firstname"))).sendKeys("Sunil");
+	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_Firstname"))).sendKeys(RandomStringUtils.randomAlphabetic(5));
 	
-	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_lastName"))).sendKeys("Raulo");
+	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_lastName"))).sendKeys(RandomStringUtils.randomAlphabetic(5));
 	
 	new Select(wd.findElement(By.id("meco_Gender"))).selectByValue("M");
 	
@@ -44,7 +49,6 @@ public class AppTest {
 	wd.findElement(By.id("chkNoReferedBy")).click();
 	
 	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_MobileNo"))).sendKeys(RandomStringUtils.randomNumeric(10));
-	
 	
 	wd.findElement(By.id("chkNoEmail")).click();
 	
@@ -73,7 +77,18 @@ public class AppTest {
 	
 	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("LabelIDType")));
 	
-	System.out.println("Enquiry Created Successfully");
+	String MemberId = wd.findElement(By.id("divMemberId")).getText();
+	
+	FileWriter fr=new FileWriter("D:\\data.txt");
+	BufferedWriter br=new BufferedWriter(fr);
+
+	br.write(MemberId);
+	br.newLine();
+	br.close();
+	
+	System.out.println("Enquiry Created Successfully" + MemberId);
+
+
 	  
   }
   @BeforeTest
