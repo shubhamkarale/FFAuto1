@@ -2,6 +2,7 @@ package guru99.gittest;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,7 +43,7 @@ public class AppTest {
 	
 	wd.findElement(By.id("chkNoReferedBy")).click();
 	
-	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_MobileNo"))).sendKeys("0101010104");
+	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_MobileNo"))).sendKeys(RandomStringUtils.randomNumeric(10));
 	
 	
 	wd.findElement(By.id("chkNoEmail")).click();
