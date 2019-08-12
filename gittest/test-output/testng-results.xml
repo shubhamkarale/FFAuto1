@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20368" started-at="2019-08-12T07:43:36Z" finished-at="2019-08-12T07:43:57Z">
+  <suite name="Gmail Suite" duration-ms="44009" started-at="2019-08-12T11:30:23Z" finished-at="2019-08-12T11:31:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20368" started-at="2019-08-12T07:43:36Z" finished-at="2019-08-12T07:43:57Z">
+    <test name="AppTest" duration-ms="24189" started-at="2019-08-12T11:30:23Z" finished-at="2019-08-12T11:30:48Z">
       <class name="guru99.gittest.AppTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.AppTest@42d8062c]" name="beforeTest" is-config="true" duration-ms="6640" started-at="2019-08-12T07:43:36Z" finished-at="2019-08-12T07:43:43Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.AppTest@42d8062c]" name="beforeTest" is-config="true" duration-ms="6573" started-at="2019-08-12T11:30:23Z" finished-at="2019-08-12T11:30:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LoginAppTest()[pri:0, instance:guru99.gittest.AppTest@42d8062c]" name="LoginAppTest" duration-ms="11398" started-at="2019-08-12T07:43:43Z" finished-at="2019-08-12T07:43:54Z">
+        <test-method status="PASS" signature="LoginAppTest()[pri:0, instance:guru99.gittest.AppTest@42d8062c]" name="LoginAppTest" duration-ms="15507" started-at="2019-08-12T11:30:30Z" finished-at="2019-08-12T11:30:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAppTest -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.AppTest@42d8062c]" name="afterTest" is-config="true" duration-ms="2314" started-at="2019-08-12T07:43:54Z" finished-at="2019-08-12T07:43:57Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.AppTest@42d8062c]" name="afterTest" is-config="true" duration-ms="2080" started-at="2019-08-12T11:30:45Z" finished-at="2019-08-12T11:30:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- guru99.gittest.AppTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- AppTest -->
+    <test name="Fitnessforce" duration-ms="19348" started-at="2019-08-12T11:30:48Z" finished-at="2019-08-12T11:31:07Z">
+      <class name="guru99.gittest.EnquiryCreation">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.EnquiryCreation@74ad1f1f]" name="beforeTest" is-config="true" duration-ms="5864" started-at="2019-08-12T11:30:48Z" finished-at="2019-08-12T11:30:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="EnquiryCreation()[pri:0, instance:guru99.gittest.EnquiryCreation@74ad1f1f]" name="EnquiryCreation" duration-ms="11407" started-at="2019-08-12T11:30:54Z" finished-at="2019-08-12T11:31:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnquiryCreation -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.EnquiryCreation@74ad1f1f]" name="afterTest" is-config="true" duration-ms="2075" started-at="2019-08-12T11:31:05Z" finished-at="2019-08-12T11:31:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- guru99.gittest.EnquiryCreation -->
+    </test> <!-- Fitnessforce -->
+  </suite> <!-- Gmail Suite -->
 </testng-results>
