@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="guru99.gittest.Login">
+      <class name="guru99.gittest.AppTest">
         <methods>
+          <include name="f"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="Login"/>
         </methods>
-      </class> <!-- guru99.gittest.Login -->
+      </class> <!-- guru99.gittest.AppTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
