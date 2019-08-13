@@ -5,8 +5,10 @@
     <classes>
       <class name="guru99.gittest.AppTest">
         <methods>
-          <include name="LoginAppTest"/>
+          <include name="tearDown"/>
           <include name="beforeTest"/>
+          <include name="startUp"/>
+          <include name="EnquiryCreation"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- guru99.gittest.AppTest -->
