@@ -18,6 +18,7 @@ public class AppTest extends Setup
   public void PageURL() throws IOException {
 	  
 	 url.Enquiry();
+	 
  }
   
 @Test (priority=2)
