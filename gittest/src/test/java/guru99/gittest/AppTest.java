@@ -17,12 +17,12 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 
-public class AppTest extends EnquiryCreation {
-	WebDriver wd;
-	WebDriverWait wait;
-	
-	
-  @Test
+public class AppTest extends Setup  
+
+{
+	public EnquiryCreation EC = new EnquiryCreation();
+
+  @Test (priority=1)
   public void LoginAppTest() throws IOException {
 	  
 	
@@ -91,9 +91,8 @@ public class AppTest extends EnquiryCreation {
 	System.out.println("Enquiry Created Successfully" + MemberId);
   }
 
-@Test 
+@Test (priority=2)
 public void EnquiryCreation() throws IOException {
-	EnquiryCreation EC = new EnquiryCreation();
 	EC.EnquiryCreation();
 	  
   }
@@ -101,20 +100,14 @@ public void EnquiryCreation() throws IOException {
   @BeforeTest
   public void beforeTest() {
 	  
-  	System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
-  	wd = new ChromeDriver();
-    wd.get("https://demo.fitnessforce.com/ffDefault.aspx");
-//	wd.get("https://demo.fitnessforce.com/ffDefault.aspx");
-    wd.manage().window().maximize();
-    wd.manage().deleteAllCookies();
-    wait = new WebDriverWait (wd, 20);
+  
   }
   
 
   @AfterTest
   public void afterTest() {
 	  
-	  wd.close();
+	 
   }
 
 }
