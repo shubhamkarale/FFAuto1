@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 
-public class AppTest extends NewTest {
+public class AppTest extends EnquiryCreation {
 	WebDriver wd;
 	WebDriverWait wait;
   @Test
