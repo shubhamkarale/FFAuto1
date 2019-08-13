@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 
-public class AppTest {
+public class AppTest extends NewTest {
 	WebDriver wd;
 	WebDriverWait wait;
   @Test
@@ -89,6 +89,23 @@ public class AppTest {
 	System.out.println("Enquiry Created Successfully" + MemberId);
 
 
+	  
+  }
+  
+  @Test
+  public void g() {
+	  
+	
+	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
+	wd.findElement(By.id("txtPassword")).sendKeys("fit@1235");
+	//wd.findElement(By.id("txtUsername")).sendKeys("admin");// enter username
+	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
+	wd.findElement(By.id("SignInt")).click();// click on sign in
+	  System.out.println("test");
+	  
+	  System.out.println("New Branch");
+	  
+	  System.out.println("New Center Selection");
 	  
   }
   @BeforeTest
