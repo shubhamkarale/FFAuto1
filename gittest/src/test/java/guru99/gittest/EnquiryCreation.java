@@ -23,11 +23,11 @@ public class EnquiryCreation {
   public void EnquiryCreation() throws IOException {
 	  
 	
-	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
-	wd.findElement(By.id("txtPassword")).sendKeys("fit@123");
-	//wd.findElement(By.id("txtUsername")).sendKeys("admin");// enter username
-	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
-	wd.findElement(By.id("SignIn")).click();// click on sign in
+//	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
+//	wd.findElement(By.id("txtPassword")).sendKeys("fit@123");
+//	//wd.findElement(By.id("txtUsername")).sendKeys("admin");// enter username
+//	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
+//	wd.findElement(By.id("SignIn")).click();// click on sign in
 	
 //	wait.until(ExpectedConditions.elementToBeClickable(By.id("tent_search"))).sendKeys("fitnessforce demo");
 	
@@ -85,7 +85,7 @@ public class EnquiryCreation {
 	br.newLine();
 	br.close();
 	
-	System.out.println("Enquiry Created Successfully" + MemberId);
+	System.out.println("2nd Enquiry Created Successfully" + MemberId);
 
 
 	  
