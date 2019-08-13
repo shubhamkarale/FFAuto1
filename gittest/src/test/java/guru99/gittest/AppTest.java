@@ -20,6 +20,8 @@ import org.testng.annotations.AfterTest;
 public class AppTest {
 	WebDriver wd;
 	WebDriverWait wait;
+	
+	
   @Test
   public void LoginAppTest() throws IOException {
 	  
@@ -87,8 +89,12 @@ public class AppTest {
 	br.close();
 	
 	System.out.println("Enquiry Created Successfully" + MemberId);
+  }
 
-
+@Test 
+public void EnquiryCreation() throws IOException {
+	EnquiryCreation EC = new EnquiryCreation();
+	EC.EnquiryCreation();
 	  
   }
   @BeforeTest
