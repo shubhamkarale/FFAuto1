@@ -6,9 +6,11 @@
       <class name="guru99.gittest.AppTest">
         <methods>
           <include name="tearDown"/>
+          <include name="CenterSelection"/>
           <include name="beforeTest"/>
+          <include name="LoginDetails"/>
           <include name="startUp"/>
-          <include name="EnquiryCreation"/>
+          <include name="MemberCreation"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- guru99.gittest.AppTest -->
