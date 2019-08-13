@@ -1,6 +1,7 @@
 package guru99.gittest;
 
 import org.testng.annotations.Test;
+
 import org.testng.annotations.BeforeTest;
 
 import java.io.IOException;
@@ -13,55 +14,45 @@ public class AppTest extends Setup
 	public url url = new url();  
 	public Form fm = new Form();  
 	
- @Test (priority=1)
-  
-  public void PageURL() throws IOException {
-	  
-	 url.Enquiry();
-	 
- }
-  
-@Test (priority=2)
+@Test (priority=1)
 
 public void EnquiryCreation() throws IOException, InterruptedException {
 	
+	url.CreateEnquiry();
 	fm.formfilling();
 	fm.AddFollowUp();
-	url.Submit();  
+	url.ETMSubmit();  
 	
   }
 
-@Test (priority=3)
-
-public void TrialPageURL() throws IOException {
-	  
-	 url.Trial();
-}
-
-@Test (priority=4)
+@Test (priority=2)
 
 public void TrialCreation() throws IOException, InterruptedException {
 	
+	url.CreateTrial();
 	fm.formfilling();
 	fm.AddFollowUp(); 
-	url.Submit();
+	url.ETMSubmit();
 }
 
-@Test (priority=5)
-public void MemberPageURL() throws IOException {
-	  
-	 url.Member();
-}
-
-@Test (priority=6)
+@Test (priority=3)
 
 public void MemberCreation() throws IOException, InterruptedException {
 	
+	 url.CreateMember();
 	fm.formfilling();
 	fm.AddFollowUp(); 
-	url.Submit();
+	url.ETMSubmit();
 }
 
+//@Test (priority=1)
+//
+//public void Memberbill() throws IOException, InterruptedException, BiffException {
+//	
+//	url.LoadData();
+//	url.CreateMembershipbill();
+//	
+//}
 
   @BeforeTest
   public void beforeTest() {
