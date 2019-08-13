@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterTest;
 
 public class url extends Setup {
+	String MemberId;
   @Test
   public void Enquiry() {
 	  
@@ -36,13 +37,19 @@ public class url extends Setup {
 		  
 		  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("LabelIDType")));
 		  
-		  System.out.println("Enquiry Created SuccessFully");
+		  MemberId = wd.findElement(By.id("divMemberId")).getText();
+		  
+		  System.out.println("Enquiry Created SuccessFully id = " + MemberId);
 		  
 	  } else if(getUrl.contains("pagetype=trial")) {
 		  
 		  wd.findElement(By.id("btnSaveEnq")).click();
 		  
 		  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("customerid")));
+		  
+		  MemberId = wd.findElement(By.id("customerid")).getText(); 
+		  
+		  System.out.println("Trial Page load for member id = " + MemberId);
 		  
 		  System.out.println("Trial Created SuccessFully");
 		  
@@ -52,15 +59,13 @@ public class url extends Setup {
 		  
 		  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("PayTypeCash")));
 		  
-		  System.out.println("Bill Page load SuccessFully");
+		  MemberId = wd.findElement(By.className("lefgrycnt margtop3 clsclientid")).getText();
+		  
+		  System.out.println("Bill Page load SuccessFully for Member Id = " + MemberId);	  
 		  
 	  } else {
 		  System.out.println("Page Not found");
 	  }
-	  
-	 
-	  
-	  
   }
   @BeforeTest
   public void beforeTest() {

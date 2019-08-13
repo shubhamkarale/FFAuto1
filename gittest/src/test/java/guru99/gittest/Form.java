@@ -23,7 +23,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("meco_Firstname")).sendKeys(RandomStringUtils.randomAlphabetic(5));
 
 			} else {
-				System.out.println("Field meco_Firstname is not compulsory");
+				// System.out.println("Field meco_Firstname is not compulsory");
 				
 			}
 
@@ -34,7 +34,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("meco_lastName")).sendKeys(RandomStringUtils.randomAlphabetic(5));
 
 			} else {
-				System.out.println("Field error is not compulsory");
+				// System.out.println("Field error is not compulsory");
 			}
 
 			// Gender
@@ -44,7 +44,7 @@ public class Form extends Setup {
 				new Select(wd.findElement(By.id("meco_Gender"))).selectByIndex(1);
 
 			} else {
-				System.out.println("meco_Gender is not compulsory");
+				// System.out.println("meco_Gender is not compulsory");
 			}
 
 			// Fitness Goal
@@ -58,7 +58,7 @@ public class Form extends Setup {
 				goal.click();
 
 			} else {
-				System.out.println("meco_FitnessGoal is not compulsory");
+				// System.out.println("meco_FitnessGoal is not compulsory");
 			}
 			
 			// DOB
@@ -72,7 +72,7 @@ public class Form extends Setup {
 				wd.findElement(By.linkText("22")).click();
 
 			} else {
-				System.out.println("meco_DateOfBirth is not compulsory");
+				// System.out.println("meco_DateOfBirth is not compulsory");
 			}
 
 			// Nationlity
@@ -84,7 +84,7 @@ public class Form extends Setup {
 				nationality.selectByValue("Indian");
 
 			} else {
-				System.out.println("meco_Nationality is not compulsory");
+				// System.out.println("meco_Nationality is not compulsory");
 			}
 
 			// Cl
@@ -95,7 +95,7 @@ public class Form extends Setup {
 				Cl.selectByIndex(0);
 
 			} else {
-				System.out.println("meco_clientlanguage is not compulsory");
+				// System.out.println("meco_clientlanguage is not compulsory");
 			}
 
 			// WrkTime
@@ -108,14 +108,14 @@ public class Form extends Setup {
 				
 				WT.click();
 			} else {
-				System.out.println("WrkTime is not compulosry");
+				// System.out.println("WrkTime is not compulosry");
 			}
 			
 			// contact info
 			if (wd.findElement(By.id("meco_MobileNo")).isDisplayed()) {
 				wd.findElement(By.id("meco_MobileNo")).sendKeys(RandomStringUtils.randomNumeric(10));
 			} else {
-				System.out.println("meco_MobileNo is not compulosry");
+				// System.out.println("meco_MobileNo is not compulosry");
 			}
 
 			// Email
@@ -125,7 +125,7 @@ public class Form extends Setup {
 				WebElement Email = wd.findElement(By.id("meco_Emailaddress"));
 				Email.sendKeys("username" + RandomStringUtils.randomNumeric(2) + "@sgrfh.com");
 			} else {
-				System.out.println("meco_Emailaddress is not compulsory");
+				// System.out.println("meco_Emailaddress is not compulsory");
 			}
 			
 			// occupation
@@ -135,7 +135,7 @@ public class Form extends Setup {
 				occ.selectByIndex(5);
 
 			} else {
-				System.out.println("meco_Occuption is not compulosry");
+				// System.out.println("meco_Occuption is not compulosry");
 			}
 			
 			// Org
@@ -145,7 +145,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("cb_meco_NameofOrg")).sendKeys("asdas");
 
 			} else {
-				System.out.println("Org is not compulsory");
+				// System.out.println("Org is not compulsory");
 			}
 
 			// Gen Info
@@ -155,7 +155,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("meco_generalInfo")).sendKeys("non");
 
 			} else {
-				System.out.println("meco_generalInfo is not compulsory");
+				// System.out.println("meco_generalInfo is not compulsory");
 			}
 			// Blood Group
 		
@@ -165,7 +165,7 @@ public class Form extends Setup {
 				BG.selectByIndex(1);
 
 			} else {
-				System.out.println("meco_bloodgroup is not compulosry");
+				// System.out.println("meco_bloodgroup is not compulosry");
 			}
 
 			// Enquiry type
@@ -175,7 +175,7 @@ public class Form extends Setup {
 				Select EQ = new Select(wd.findElement(By.id("meco_EnquiryType")));
 				EQ.selectByIndex(6);
 			} else {
-				System.out.println("meco_bloodgroup is not compulosry");
+				// System.out.println("meco_bloodgroup is not compulosry");
 			}
 			
 			if (wd.findElement(By.id("meco_bldngName")).isDisplayed()) {
@@ -185,7 +185,7 @@ public class Form extends Setup {
 			}
 
 			else {
-				System.out.println("meco_bldngName is not compulsory");
+				// System.out.println("meco_bldngName is not compulsory");
 			}
 
 			// Street
@@ -194,7 +194,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("meco_addressline1")).sendKeys("non");
 
 			} else {
-				System.out.println("meco_addressline1 is not compulsory");
+				// System.out.println("meco_addressline1 is not compulsory");
 			}
 
 			// pin code
@@ -203,7 +203,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("meco_addrPinCode")).sendKeys(RandomStringUtils.randomNumeric(6));
 
 			} else {
-				System.out.println("meco_addrPinCode is not compulsory");
+				// System.out.println("meco_addrPinCode is not compulsory");
 			}
 			// Location
 			if (wd.findElement(By.id("meco_addrLocatoin")).isDisplayed()) {
@@ -211,13 +211,13 @@ public class Form extends Setup {
 				loc.selectByIndex(3);
 
 			} else {
-				System.out.println("meco_addrLocatoin is not compulsory");
+				// System.out.println("meco_addrLocatoin is not compulsory");
 			}
 
 			if (wd.findElement(By.id("meco_MiddleName")).isDisplayed()) {
 				wd.findElement(By.id("meco_MiddleName")).sendKeys(RandomStringUtils.randomAlphabetic(5));
 			} else {
-				System.out.println("meco_MiddleName is not compulsory");
+				// System.out.println("meco_MiddleName is not compulsory");
 			}
 
 			// source
@@ -230,7 +230,7 @@ public class Form extends Setup {
 				
 			} else {
 				
-				System.out.println("meco_Source is not compulsory");
+				// System.out.println("meco_Source is not compulsory");
 			}
 
 			// Service interested in
@@ -241,7 +241,7 @@ public class Form extends Setup {
 			ele1.click();
 				} else {
 				
-				System.out.println("Service interested in is not compulsory");
+				// System.out.println("Service interested in is not compulsory");
 			}
 
 			// marketing preferneces
@@ -251,7 +251,7 @@ public class Form extends Setup {
 			mp1.click();
 				} else {
 				
-				System.out.println("marketing preferneces in is not compulsory");
+				// System.out.println("marketing preferneces in is not compulsory");
 			}
 
 			// Anniversary
@@ -261,7 +261,7 @@ public class Form extends Setup {
 			wd.findElement(By.linkText("17")).click();
 				} else {
 				
-				System.out.println("Anniversary is not compulsory");
+				// System.out.println("Anniversary is not compulsory");
 			}	
 
 			// spouse name
@@ -271,7 +271,7 @@ public class Form extends Setup {
 			
 				} else {
 				
-				System.out.println("spouse name is not compulsory");
+				// System.out.println("spouse name is not compulsory");
 			}	
 
 			// national ID
@@ -282,7 +282,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("national ID is not compulsory");
+					// System.out.println("national ID is not compulsory");
 				}	
 
 			// Height
@@ -293,7 +293,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("Height is not compulsory");
+					// System.out.println("Height is not compulsory");
 				}
 
 			// Weight
@@ -303,7 +303,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("meco_weight")).sendKeys(RandomStringUtils.randomNumeric(2));
 					} else {
 					
-					System.out.println("Weight is not compulsory");
+					// System.out.println("Weight is not compulsory");
 				}
 
 			// Medical Alert
@@ -313,7 +313,7 @@ public class Form extends Setup {
 				wd.findElement(By.id("meco_MedicalAlert")).sendKeys(RandomStringUtils.randomNumeric(2));
 					} else {
 					
-					System.out.println("Medical Alert is not compulsory");
+					// System.out.println("Medical Alert is not compulsory");
 				}
 
 			// personal int
@@ -327,7 +327,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("Medical Alert is not compulsory");
+					// System.out.println("Medical Alert is not compulsory");
 				}
 			
 			// Referred by
@@ -338,7 +338,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("Referred by is not compulsory");
+					// System.out.println("Referred by is not compulsory");
 				}
 
 			// Language
@@ -352,7 +352,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("meco_emergencyContactPerson is not compulsory");
+					// System.out.println("meco_emergencyContactPerson is not compulsory");
 				}
 			
 			// emergency Contact no
@@ -363,7 +363,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("meco_emergencyContactNo is not compulsory");
+					// System.out.println("meco_emergencyContactNo is not compulsory");
 				}
 			
 			// Access Card issued Date
@@ -376,7 +376,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("Access Card issued Date is not compulsory");
+					// System.out.println("Access Card issued Date is not compulsory");
 				}
 					
 			// Facebook Id
@@ -387,7 +387,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("meco_facebookId is not compulsory");
+					// System.out.println("meco_facebookId is not compulsory");
 				}
 
 			// Orkut Id
@@ -398,7 +398,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("meco_orkutId is not compulsory");
+					// System.out.println("meco_orkutId is not compulsory");
 				}
 
 			// Linked In
@@ -408,7 +408,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("meco_linkedinId is not compulsory");
+					// System.out.println("meco_linkedinId is not compulsory");
 				}
 			// Twitter Id
 			
@@ -418,7 +418,7 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("meco_twitterId is not compulsory");
+					// System.out.println("meco_twitterId is not compulsory");
 				}
 
 			// Ethnicity
@@ -429,7 +429,7 @@ public class Form extends Setup {
 //				
 //					} else {
 //					
-//					System.out.println("meco_ethnicity is not compulsory");
+//					// System.out.println("meco_ethnicity is not compulsory");
 //				}
 			
 			if (wd.findElement(By.id("meco_personalizeMessage")).isDisplayed()) {
@@ -438,64 +438,17 @@ public class Form extends Setup {
 				
 					} else {
 					
-					System.out.println("meco_personalizeMessage is not compulsory");
+					// System.out.println("meco_personalizeMessage is not compulsory");
 				}			
 
 	  
-//
-//	wd.get("https://demo.fitnessforce.com/dashboard/started.aspx?feature=show&pagevalue=99&tenantId=460");
-//	
-//	wd.get("https://demo.fitnessforce.com/Transaction/membercommon_ff.aspx?formname=EnquirySearch&pagetype=createenquiry&mode=enquiry&TenantId=460&BillAtId=460&BillForId=460&searchtext=05405455");
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_Firstname"))).sendKeys(RandomStringUtils.randomAlphabetic(5));
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_lastName"))).sendKeys(RandomStringUtils.randomAlphabetic(5));
-//	
-//	new Select(wd.findElement(By.id("meco_Gender"))).selectByValue("M");
-//	
-//	new Select(wd.findElement(By.id("meco_Source"))).selectByValue("Banners");
-//	
-//	wd.findElement(By.id("chkNoReferedBy")).click();
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_MobileNo"))).sendKeys(RandomStringUtils.randomNumeric(10));
-//	
-//	wd.findElement(By.id("chkNoEmail")).click();
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_bldngName"))).sendKeys("Test");
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_addressline1"))).sendKeys("test");
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("meco_addrPinCode"))).sendKeys("0101010");
-//	
-//	
-//	new Select(wd.findElement(By.id("meco_addrLocatoin"))).selectByValue("Andheri");
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("ddlCallResponce"))).click();
-//	
-//	//waitwd.findElement(By.id("ddlCallResponce")).click();
-//	
-//	new Select(wd.findElement(By.id("ddlCallResponce"))).selectByVisibleText("Successful Follow Up");
-//	
-//	new Select(wd.findElement(By.id("ddlConvertibility"))).selectByValue("Successful Follow Up");
-//	
-//	new Select(wd.findElement(By.id("ddlContacttypefl"))).selectByValue("Phone");
-//	
-//	wait.until(ExpectedConditions.elementToBeClickable(By.id("textarea"))).sendKeys("Test");
-	
-//	wd.findElement(By.id("btnSaveEnq")).click();
-//	
-//	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("LabelIDType")));
-//	
-//	String MemberId = wd.findElement(By.id("divMemberId")).getText();
-//	
 //	FileWriter fr=new FileWriter("D:\\data.txt");
 //	BufferedWriter br=new BufferedWriter(fr);
 //
 //	br.write(MemberId);
 //	br.newLine();
 //	br.close();
-//	
-//	System.out.println("2nd Enquiry Created Successfully" + MemberId);
+
 	  
   }
   
@@ -524,16 +477,14 @@ public class Form extends Setup {
 			
 				} else {
 				
-				System.out.println("Follow Up Not Visible");
+				 System.out.println("Follow Up Not Visible");
 			}
-
-		
 	}
  
 @BeforeTest
   public void beforeTest() {
 	  
-	  System.out.println("Your Test about to begin");
+	  // System.out.println("Your Test about to begin");
 	  
   }
   
