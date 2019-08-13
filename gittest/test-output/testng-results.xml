@@ -1,49 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32241" started-at="2019-08-13T14:39:42Z" finished-at="2019-08-13T14:40:14Z">
+  <suite name="Default suite" duration-ms="40702" started-at="2019-08-13T15:00:42Z" finished-at="2019-08-13T15:01:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32241" started-at="2019-08-13T14:39:42Z" finished-at="2019-08-13T14:40:14Z">
-      <class name="guru99.gittest.AppTest">
-        <test-method status="PASS" signature="CenterSelection()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="CenterSelection" is-config="true" duration-ms="8" started-at="2019-08-13T14:39:31Z" finished-at="2019-08-13T14:39:31Z">
+    <test name="Default test" duration-ms="40702" started-at="2019-08-13T15:00:42Z" finished-at="2019-08-13T15:01:22Z">
+      <class name="guru99.gittest.url">
+        <test-method status="PASS" signature="CenterSelection()[pri:0, instance:guru99.gittest.url@670b40af]" name="CenterSelection" is-config="true" duration-ms="8" started-at="2019-08-13T15:00:29Z" finished-at="2019-08-13T15:00:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CenterSelection -->
-        <test-method status="PASS" signature="LoginDetails()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="LoginDetails" is-config="true" duration-ms="1" started-at="2019-08-13T14:39:31Z" finished-at="2019-08-13T14:39:31Z">
+        <test-method status="PASS" signature="LoginDetails()[pri:0, instance:guru99.gittest.url@670b40af]" name="LoginDetails" is-config="true" duration-ms="1" started-at="2019-08-13T15:00:29Z" finished-at="2019-08-13T15:00:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDetails -->
-        <test-method status="PASS" signature="startUp()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="startUp" is-config="true" duration-ms="10912" started-at="2019-08-13T14:39:31Z" finished-at="2019-08-13T14:39:42Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:guru99.gittest.url@670b40af]" name="startUp" is-config="true" duration-ms="12496" started-at="2019-08-13T15:00:29Z" finished-at="2019-08-13T15:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-08-13T14:39:42Z" finished-at="2019-08-13T14:39:42Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.url@670b40af]" name="beforeTest" is-config="true" duration-ms="1" started-at="2019-08-13T15:00:42Z" finished-at="2019-08-13T15:00:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="EnquiryCreation()[pri:1, instance:guru99.gittest.AppTest@59906517]" name="EnquiryCreation" duration-ms="7107" started-at="2019-08-13T14:39:42Z" finished-at="2019-08-13T14:39:49Z">
+        <test-method status="PASS" signature="CreateEnquiry()[pri:0, instance:guru99.gittest.url@670b40af]" name="CreateEnquiry" duration-ms="2485" started-at="2019-08-13T15:00:42Z" finished-at="2019-08-13T15:00:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EnquiryCreation -->
-        <test-method status="PASS" signature="TrialCreation()[pri:2, instance:guru99.gittest.AppTest@59906517]" name="TrialCreation" duration-ms="6534" started-at="2019-08-13T14:39:49Z" finished-at="2019-08-13T14:39:55Z">
+        </test-method> <!-- CreateEnquiry -->
+        <test-method status="PASS" signature="CreateMember()[pri:0, instance:guru99.gittest.url@670b40af]" name="CreateMember" duration-ms="1941" started-at="2019-08-13T15:00:44Z" finished-at="2019-08-13T15:00:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TrialCreation -->
-        <test-method status="PASS" signature="MemberCreation()[pri:3, instance:guru99.gittest.AppTest@59906517]" name="MemberCreation" duration-ms="18577" started-at="2019-08-13T14:39:55Z" finished-at="2019-08-13T14:40:14Z">
+        </test-method> <!-- CreateMember -->
+        <test-method status="PASS" signature="CreateTrial()[pri:0, instance:guru99.gittest.url@670b40af]" name="CreateTrial" duration-ms="1470" started-at="2019-08-13T15:00:46Z" finished-at="2019-08-13T15:00:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MemberCreation -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-08-13T14:40:14Z" finished-at="2019-08-13T14:40:14Z">
+        </test-method> <!-- CreateTrial -->
+        <test-method status="FAIL" signature="ETMSubmit()[pri:0, instance:guru99.gittest.url@670b40af]" name="ETMSubmit" duration-ms="20237" started-at="2019-08-13T15:00:48Z" finished-at="2019-08-13T15:01:08Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 20 seconds waiting for presence of element located by: By.id: customerid
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-AUJ9MEE', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}), userDataDir=C:\Users\VRUSHALI\AppData\Local\Temp\scoped_dir18320_8671}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6f685b6e3c08bfa6471296bb691a98e4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 20 seconds waiting for presence of element located by: By.id: customerid
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-AUJ9MEE', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}), userDataDir=C:\Users\VRUSHALI\AppData\Local\Temp\scoped_dir18320_8671}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6f685b6e3c08bfa6471296bb691a98e4
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at guru99.gittest.url.ETMSubmit(url.java:111)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"customerid"}
+  (Session info: chrome=76.0.3809.100)
+  (Driver info: chromedriver=75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 27 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-AUJ9MEE', ip: '192.168.1.90', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=75.0.3770.140 (2d9f97485c7b07dc18a74666574f19176731995c-refs/branch-heads/3770@{#1155}), userDataDir=C:\Users\VRUSHALI\AppData\Local\Temp\scoped_dir18320_8671}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6f685b6e3c08bfa6471296bb691a98e4
+*** Element info: {Using=id, value=customerid}
+at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+at org.openqa.selenium.By$ById.findElement(By.java:214)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:39)
+at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:106)
+at org.openqa.selenium.support.ui.ExpectedConditions$3.apply(ExpectedConditions.java:103)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ETMSubmit -->
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:guru99.gittest.url@670b40af]" name="LoadData" duration-ms="10258" started-at="2019-08-13T15:01:08Z" finished-at="2019-08-13T15:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadData -->
+        <test-method status="PASS" signature="CreateMembershipbill()[pri:1, instance:guru99.gittest.url@670b40af]" name="CreateMembershipbill" duration-ms="4260" started-at="2019-08-13T15:01:18Z" finished-at="2019-08-13T15:01:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateMembershipbill -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.url@670b40af]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-08-13T15:01:22Z" finished-at="2019-08-13T15:01:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-13T14:40:14Z" finished-at="2019-08-13T14:40:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:guru99.gittest.url@670b40af]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-13T15:01:22Z" finished-at="2019-08-13T15:01:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- guru99.gittest.AppTest -->
+      </class> <!-- guru99.gittest.url -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

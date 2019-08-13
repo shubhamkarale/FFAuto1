@@ -25,7 +25,11 @@ public class url extends Setup {
 	@Test
 	  public void LoadData() throws BiffException, IOException, InterruptedException {
 		  
-		fi = new FileInputStream("D:\\MemberIds.xls"); //Excel location
+		String path = System.getProperty("user.dir");
+		
+		System.out.println(path);
+
+		fi = new FileInputStream(path+"\\test-output\\MemberIds.xls"); //Excel location
 
         wb = Workbook.getWorkbook(fi); // reading excel
 
