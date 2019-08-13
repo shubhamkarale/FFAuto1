@@ -51,15 +51,13 @@ public class url extends Setup {
 		  
 		  System.out.println("Trial Page load for member id = " + MemberId);
 		  
-		  System.out.println("Trial Created SuccessFully");
-		  
 	  } else if(getUrl.contains("pagetype=member")) {
 		  
 		  wd.findElement(By.id("btnSaveEnq")).click();
 		  
 		  wait.until(ExpectedConditions.presenceOfElementLocated(By.id("PayTypeCash")));
 		  
-		  MemberId = wd.findElement(By.className("lefgrycnt margtop3 clsclientid")).getText();
+		  MemberId = wd.findElement(By.xpath("//*[@id=\"fullscreen\"]/div[1]/div[3]/table/tbody/tr[1]/td[1]/div[2]/table/tbody/tr/td/table/tbody/tr[2]/td/div[2]/table/tbody/tr/td/div[2]/div/div[6]/div[2]/div[2]")).getText();
 		  
 		  System.out.println("Bill Page load SuccessFully for Member Id = " + MemberId);	  
 		  
