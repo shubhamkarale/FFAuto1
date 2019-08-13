@@ -7,15 +7,11 @@
         <methods>
           <include name="TrialCreation"/>
           <include name="tearDown"/>
-          <include name="MemberPageURL"/>
-          <include name="PageURL"/>
-          <include name="TrialPageURL"/>
           <include name="CenterSelection"/>
           <include name="beforeTest"/>
           <include name="LoginDetails"/>
           <include name="startUp"/>
           <include name="EnquiryCreation"/>
-          <include name="MemberCreation"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- guru99.gittest.AppTest -->
