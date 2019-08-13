@@ -24,6 +24,7 @@ public class Form extends Setup {
 
 			} else {
 				System.out.println("Field meco_Firstname is not compulsory");
+				
 			}
 
 			// Last Name

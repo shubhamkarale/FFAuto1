@@ -15,6 +15,7 @@ public class url extends Setup {
   
   @Test
   public void Member() {
+	
 	  
 	  wd.get("https://demo.fitnessforce.com/Transaction/membercommon_ff.aspx?formname=EnquirySearch&pagetype=member&mode=enquiry&TenantId=460&BillAtId=460&BillForId=460&searchtext=5480548");
   }
