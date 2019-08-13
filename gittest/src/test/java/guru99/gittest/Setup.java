@@ -20,7 +20,6 @@ public void startUp(){
   	
     wd.get("https://demo.fitnessforce.com/ffDefault.aspx");
     
-    
     wd.manage().window().maximize();
     
     wd.manage().deleteAllCookies();
