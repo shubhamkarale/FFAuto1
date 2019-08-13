@@ -21,7 +21,7 @@ public class AppTest extends Setup
 
 {
 	public EnquiryCreation EC = new EnquiryCreation();
-	
+
   @Test (priority=1)
   public void LoginAppTest() throws IOException {
 	  
@@ -96,6 +96,7 @@ public void EnquiryCreation() throws IOException {
 	EC.EnquiryCreation();
 	  
   }
+  
   @BeforeTest
   public void beforeTest() {
 	  
