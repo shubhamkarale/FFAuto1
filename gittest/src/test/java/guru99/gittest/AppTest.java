@@ -7,10 +7,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 
-public class AppTest {
+public class AppTest extends NewTest {
 	WebDriver wd;
   @Test
   public void f() {
+	  
+	
+	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
+	wd.findElement(By.id("txtPassword")).sendKeys("fit@1235");
+	//wd.findElement(By.id("txtUsername")).sendKeys("admin");// enter username
+	//wd.findElement(By.id("txtPassword")).sendKeys("Member@123");// enter password
+	wd.findElement(By.id("SignInt")).click();// click on sign in
+	  System.out.println("test");
+	  
+	  System.out.println("New Branch");
+	  
+	  System.out.println("New Center Selection");
+	  
+  }
+  
+  @Test
+  public void g() {
 	  
 	
 	wd.findElement(By.id("txtUsername")).sendKeys("fitnessforce.support");
