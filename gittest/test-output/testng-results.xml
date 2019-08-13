@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16312" started-at="2019-08-13T08:22:19Z" finished-at="2019-08-13T08:22:36Z">
+  <suite name="Default suite" duration-ms="18514" started-at="2019-08-13T08:24:09Z" finished-at="2019-08-13T08:24:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16312" started-at="2019-08-13T08:22:19Z" finished-at="2019-08-13T08:22:36Z">
+    <test name="Default test" duration-ms="18514" started-at="2019-08-13T08:24:09Z" finished-at="2019-08-13T08:24:28Z">
       <class name="guru99.gittest.AppTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="startUp" is-config="true" duration-ms="6558" started-at="2019-08-13T08:22:13Z" finished-at="2019-08-13T08:22:19Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="startUp" is-config="true" duration-ms="32501" started-at="2019-08-13T08:23:37Z" finished-at="2019-08-13T08:24:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-08-13T08:22:19Z" finished-at="2019-08-13T08:22:19Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-08-13T08:24:09Z" finished-at="2019-08-13T08:24:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="LoginAppTest()[pri:1, instance:guru99.gittest.AppTest@59906517]" name="LoginAppTest" duration-ms="10603" started-at="2019-08-13T08:22:19Z" finished-at="2019-08-13T08:22:30Z">
+        <test-method status="PASS" signature="LoginAppTest()[pri:1, instance:guru99.gittest.AppTest@59906517]" name="LoginAppTest" duration-ms="18494" started-at="2019-08-13T08:24:09Z" finished-at="2019-08-13T08:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAppTest -->
-        <test-method status="PASS" signature="EnquiryCreation()[pri:2, instance:guru99.gittest.AppTest@59906517]" name="EnquiryCreation" duration-ms="5689" started-at="2019-08-13T08:22:30Z" finished-at="2019-08-13T08:22:36Z">
+        <test-method status="PASS" signature="EnquiryCreation()[pri:2, instance:guru99.gittest.AppTest@59906517]" name="EnquiryCreation" duration-ms="1" started-at="2019-08-13T08:24:28Z" finished-at="2019-08-13T08:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnquiryCreation -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-08-13T08:22:36Z" finished-at="2019-08-13T08:22:36Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-08-13T08:24:28Z" finished-at="2019-08-13T08:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-13T08:22:36Z" finished-at="2019-08-13T08:22:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:guru99.gittest.AppTest@59906517]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-13T08:24:28Z" finished-at="2019-08-13T08:24:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
