@@ -3,17 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="guru99.gittest.url">
+      <class name="guru99.gittest.AppTest">
         <methods>
+          <include name="TrialCreation"/>
           <include name="tearDown"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
           <include name="CenterSelection"/>
+          <include name="beforeTest"/>
           <include name="LoginDetails"/>
           <include name="startUp"/>
-          <include name="ETMSubmit"/>
+          <include name="EnquiryCreation"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- guru99.gittest.url -->
+      </class> <!-- guru99.gittest.AppTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
