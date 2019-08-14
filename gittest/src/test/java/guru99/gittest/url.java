@@ -153,7 +153,7 @@ public class url extends Setup {
 		// Submit Button
 		wd.findElement(By.id("payment")).click();
 		
-	String Status =	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("customertype"))).getText();
+	String Status =	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("customertype"))).getText();
 	
 	if(Status.contains("Trial")) {
 		
