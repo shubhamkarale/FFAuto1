@@ -13,6 +13,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 
 public class url extends Setup {
@@ -61,10 +62,13 @@ public class url extends Setup {
             wd.get("https://demo.fitnessforce.com/clientview.aspx?pagevalue=1&enquiryid="+s1+"&tenantid=460&");
             
         String Memberstatus = wd.findElement(By.id("lblSince")).getText();
-            if(Memberstatus.contains("member"))    {
+        
+            if(Memberstatus.contains("member")||Memberstatus.contains("trial"))    {
+            	
             	System.out.println(Memberstatus);
             	
             } else {
+            	
             	break;
             }
             
@@ -128,12 +132,43 @@ public class url extends Setup {
 		  System.out.println("Page Not found");
 	  }
   }
+  
+ @Test (priority = 1)
+  
+  public void SaveTrial() {
+	 
+	 // Trial Date Selection 
+	 	wd.findElement(By.id("ctl00_ContentPlaceHolder1_imgTrlStart")).click();
+		wd.findElement(By.id("ctl00_ContentPlaceHolder1_CalendarExtender4_today")).click();
+		
+		// Product Select
+		wd.findElement(By.cssSelector(
+				"#ctl00_ContentPlaceHolder1_grdProducts > tbody > tr:nth-child(2) > td:nth-child(1) > input[type=\"image\"]"))
+				.click();
+		
+		//Session Owner
+		Select session = new Select(wd.findElement(By.id("customerOwner")));
+		session.selectByIndex(5);
+		
+		// Submit Button
+		wd.findElement(By.id("payment")).click();
+		
+	String Status =	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("customertype"))).getText();
+	
+	if(Status.contains("Trial")) {
+		
+		System.out.println("Trial Created Successfully "+ MemberId);
+		
+  }else {
+	  
+	  System.out.println("unknown Error ");
+  }
+  }
+  
   @Test (priority = 1)
   
   public void CreateMembershipbill() {
 	  
-	  
-	 
 	  wd.get("https://demo.fitnessforce.com/MemberData/purchaserev.aspx?pagevalue=1&enquiryid="+s1+"&TenantId=460&BillAtId=460&BillForId=460");
   }
   @BeforeTest

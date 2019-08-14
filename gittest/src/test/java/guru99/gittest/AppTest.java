@@ -14,18 +14,18 @@ public class AppTest extends Setup
 	public url url = new url();  
 	public Form fm = new Form();  
 	
+//@Test (priority=1)
+//
+//public void EnquiryCreation() throws IOException, InterruptedException {
+//	
+//	url.CreateEnquiry();
+//	fm.formfilling();
+//	fm.AddFollowUp();
+//	url.ETMSubmit();  
+//	
+//  }
+
 @Test (priority=1)
-
-public void EnquiryCreation() throws IOException, InterruptedException {
-	
-	url.CreateEnquiry();
-	fm.formfilling();
-	fm.AddFollowUp();
-	url.ETMSubmit();  
-	
-  }
-
-@Test (priority=2)
 
 public void TrialCreation() throws IOException, InterruptedException {
 	
@@ -33,17 +33,18 @@ public void TrialCreation() throws IOException, InterruptedException {
 	fm.formfilling();
 	fm.AddFollowUp(); 
 	url.ETMSubmit();
+	url.SaveTrial();
 }
 
-@Test (priority=3)
-
-public void MemberCreation() throws IOException, InterruptedException {
-	
-	 url.CreateMember();
-	fm.formfilling();
-	fm.AddFollowUp(); 
-	url.ETMSubmit();
-}
+//@Test (priority=3)
+//
+//public void MemberCreation() throws IOException, InterruptedException {
+//	
+//	 url.CreateMember();
+//	fm.formfilling();
+//	fm.AddFollowUp(); 
+//	url.ETMSubmit();
+//}
 
 //@Test (priority=1)
 //
