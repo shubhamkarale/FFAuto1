@@ -162,7 +162,7 @@ public class url extends Setup {
   }else {
 	  
 	  System.out.println("unknown Error ");
-  }
+  	}
   }
   
   @Test (priority = 1)
@@ -170,6 +170,7 @@ public class url extends Setup {
   public void CreateMembershipbill() {
 	  
 	  wd.get("https://demo.fitnessforce.com/MemberData/purchaserev.aspx?pagevalue=1&enquiryid="+s1+"&TenantId=460&BillAtId=460&BillForId=460");
+	  
   }
   @BeforeTest
   public void beforeTest() {
