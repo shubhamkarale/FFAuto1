@@ -452,7 +452,7 @@ public class Form extends Setup {
 	  
   }
   
-  public void AddFollowUp() {
+  public void AddFollowUp() throws InterruptedException {
 		// TODO Auto-generated method stub
 	  
 	  
@@ -468,7 +468,13 @@ public class Form extends Setup {
 			// wait.until(ExpectedConditions.elementToBeClickable(By.id("//*[@id=\"txtNextFollowupDate\"]"))).click();
 			wd.findElement(By.xpath("//*[@id=\"txtNextFollowupDate\"]")).click();
 			// DatePicker
-			wd.findElement(By.linkText("30")).click();
+			
+			Thread.sleep(2000);
+			wd.findElement(By.xpath("//*[@id=\"ui-datepicker-div\"]/div[1]/a[2]/span")).click();
+			
+			Thread.sleep(2000);
+			
+			wd.findElement(By.linkText("28")).click();
 			// ContactType
 			Select CT = new Select(wd.findElement(By.id("ddlContacttypefl")));
 			CT.selectByIndex(1);

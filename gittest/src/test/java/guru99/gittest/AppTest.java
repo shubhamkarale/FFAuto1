@@ -18,7 +18,6 @@ public class AppTest extends Setup
 
 public void EnquiryCreation() throws IOException, InterruptedException {
 	
-	
 	url.CreateEnquiry();
 	fm.formfilling();
 	fm.AddFollowUp();
