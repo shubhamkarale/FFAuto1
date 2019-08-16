@@ -18,22 +18,22 @@ public class Membershipbill_productSelection extends Setup {
 		  System.out.println("textbox not found");
 		  }
 		  Thread.sleep(2000);
-//		  wd.findElement(By.xpath("//*[@id='Item_0_0_97614']/div")).click();
-//		  wd.findElement(By.id("AddProdBtn")).click();
+		  wd.findElement(By.xpath("//*[@id='Item_0_0_97614']/div")).click();
+		  wd.findElement(By.id("AddProdBtn")).click();
 		  wd.findElement(By.id("Item_0_0_132691")).click();
 		  wd.findElement(By.id("AddProdBtn")).click();
 //		  wd.findElement(By.xpath("//*[@id='Item_0_0_132723']/div")).click();
 //		  wd.findElement(By.id("AddProdBtn")).click();
 //		  wd.findElement(By.xpath("//*[@id='Item_0_0_132726']/div")).click();
 //		  wd.findElement(By.id("AddProdBtn")).click();
-		
+
 
 	}
   
   public void FullMultiPay() throws InterruptedException {
 	  
 	  wd.findElement(By.id("PayTypeCash")).click();
-	  wd.findElement(By.id("input_002")).sendKeys("4560");
+	  wd.findElement(By.id("input_002")).sendKeys("4561");
 	  Thread.sleep(2000);
 	  WebElement element = wd.findElement(By.id("Pay_Now"));
 	  ((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", element);
