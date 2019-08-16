@@ -3,17 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="guru99.gittest.AppTest">
+      <class name="guru99.gittest.Membershipbill_productSelection">
         <methods>
           <include name="tearDown"/>
+          <include name="Product"/>
           <include name="CenterSelection"/>
-          <include name="beforeTest"/>
           <include name="LoginDetails"/>
           <include name="startUp"/>
-          <include name="MemberCreation"/>
-          <include name="afterTest"/>
         </methods>
-      </class> <!-- guru99.gittest.AppTest -->
+      </class> <!-- guru99.gittest.Membershipbill_productSelection -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
