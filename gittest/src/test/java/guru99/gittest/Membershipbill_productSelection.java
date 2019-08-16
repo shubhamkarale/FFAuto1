@@ -1,17 +1,11 @@
 package guru99.gittest;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-import java.util.Set;
-
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Membershipbill_productSelection extends Setup {
@@ -28,10 +22,10 @@ public class Membershipbill_productSelection extends Setup {
 		  wd.findElement(By.id("AddProdBtn")).click();
 		  wd.findElement(By.xpath("//*[@id='Item_0_0_132691']/div")).click();
 		  wd.findElement(By.id("AddProdBtn")).click();
-		  wd.findElement(By.xpath("//*[@id='Item_0_0_132723']/div")).click();
-		  wd.findElement(By.id("AddProdBtn")).click();
-		  wd.findElement(By.xpath("//*[@id='Item_0_0_132726']/div")).click();
-		  wd.findElement(By.id("AddProdBtn")).click();
+//		  wd.findElement(By.xpath("//*[@id='Item_0_0_132723']/div")).click();
+//		  wd.findElement(By.id("AddProdBtn")).click();
+//		  wd.findElement(By.xpath("//*[@id='Item_0_0_132726']/div")).click();
+//		  wd.findElement(By.id("AddProdBtn")).click();
 		  Thread.sleep(2000);
 
 	}
@@ -39,23 +33,23 @@ public class Membershipbill_productSelection extends Setup {
   public void FullMultiPay() throws InterruptedException {
 	  
 	  wd.findElement(By.id("PayTypeCash")).click();
-	  wd.findElement(By.id("input_002")).sendKeys("3000");
+	  wd.findElement(By.id("input_002")).sendKeys("4561");
 	  Thread.sleep(2000);
 	  WebElement element = wd.findElement(By.id("Pay_Now"));
 	  ((JavascriptExecutor) wd).executeScript("arguments[0].scrollIntoView(true);", element);
 	  wd.findElement(By.id("Pay_Now")).click();
-	  wd.findElement(By.id("PayTypeCredit Card")).click();
-	  wd.findElement(By.id("input_002")).sendKeys("3961");
-	  wd.findElement(By.id("input_004")).sendKeys(RandomStringUtils.randomAlphabetic(5));
-	  wd.findElement(By.id("input_005")).click();
-	  wd.findElement(By.linkText("5")).click();
-	  wd.findElement(By.id("input_006")).sendKeys(RandomStringUtils.randomAlphabetic(5));
-	  wd.findElement(By.id("input_007")).click();
-	  wd.findElement(By.linkText("6")).click();
-	  Thread.sleep(2000);
-	  new Select(wd.findElement(By.id("cardtype"))).selectByVisibleText("Master");
-	  Thread.sleep(2000);
-	  wd.findElement(By.id("Pay_Now")).click();
+//	  wd.findElement(By.id("PayTypeCredit Card")).click();
+//	  wd.findElement(By.id("input_002")).sendKeys("3961");
+//	  wd.findElement(By.id("input_004")).sendKeys(RandomStringUtils.randomAlphabetic(5));
+//	  wd.findElement(By.id("input_005")).click();
+//	  wd.findElement(By.linkText("5")).click();
+//	  wd.findElement(By.id("input_006")).sendKeys(RandomStringUtils.randomAlphabetic(5));
+//	  wd.findElement(By.id("input_007")).click();
+//	  wd.findElement(By.linkText("6")).click();
+//	  Thread.sleep(2000);
+//	  new Select(wd.findElement(By.id("cardtype"))).selectByVisibleText("Master");
+//	  Thread.sleep(2000);
+//	  wd.findElement(By.id("Pay_Now")).click();
 	  if (wd.findElement(By.id("BtnSubmit")).isDisplayed()) {
 	  wd.findElement(By.id("BtnSubmit")).click();
 	  } else {
