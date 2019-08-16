@@ -16,27 +16,27 @@ public class AppTest extends Setup
 	public Form fm = new Form();  
 	public Membershipbill_productSelection mb = new Membershipbill_productSelection();
 	
-@Test (priority=1)
-
-public void EnquiryCreation() throws IOException, InterruptedException {
-	
-	url.CreateEnquiry();
-	fm.formfilling();
-	fm.AddFollowUp();
-	url.ETMSubmit();  
-	
-  }
-
-@Test (priority=1)
-
-public void TrialCreation() throws IOException, InterruptedException {
-	
-	url.CreateTrial();
-	fm.formfilling();
-	fm.AddFollowUp(); 
-	url.ETMSubmit();
-	url.SaveTrial();
-}
+//@Test (priority=1)
+//
+//public void EnquiryCreation() throws IOException, InterruptedException {
+//	
+//	url.CreateEnquiry();
+//	fm.formfilling();
+//	fm.AddFollowUp();
+//	url.ETMSubmit();  
+//	
+//  }
+//
+//@Test (priority=1)
+//
+//public void TrialCreation() throws IOException, InterruptedException {
+//	
+//	url.CreateTrial();
+//	fm.formfilling();
+//	fm.AddFollowUp(); 
+//	url.ETMSubmit();
+//	url.SaveTrial();
+//}
 
 @Test (priority=1)
 
