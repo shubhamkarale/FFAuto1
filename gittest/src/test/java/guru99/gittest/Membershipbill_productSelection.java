@@ -26,7 +26,7 @@ public class Membershipbill_productSelection extends Setup {
 //		  wd.findElement(By.id("AddProdBtn")).click();
 //		  wd.findElement(By.xpath("//*[@id='Item_0_0_132726']/div")).click();
 //		  wd.findElement(By.id("AddProdBtn")).click();
-		  Thread.sleep(2000);
+		
 
 	}
   
