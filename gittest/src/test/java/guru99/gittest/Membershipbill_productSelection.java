@@ -64,6 +64,8 @@ public class Membershipbill_productSelection extends Setup {
 	  	wd.findElement(By.id("BtnSubmit")).click();
 	  	
 		Thread.sleep(4000);
+		
+		System.out.println("Bill Created Successfully");
 
 //		String actual_msg = wd.findElement(By.id("modal_error")).getText();
 //		
