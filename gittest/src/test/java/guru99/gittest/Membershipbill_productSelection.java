@@ -47,7 +47,7 @@ public class Membershipbill_productSelection extends Setup {
   
   public void SaveBill() throws InterruptedException, AWTException {
 	  
-	 	wd.findElement(By.id("BtnSubmit")).click();
+	  wait.until(ExpectedConditions.elementToBeClickable(By.id("BtnSubmit"))).click();
 	 	
 	 	Thread.sleep(5000);
 //	 	
