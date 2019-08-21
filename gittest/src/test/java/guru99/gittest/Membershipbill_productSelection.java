@@ -54,6 +54,13 @@ public class Membershipbill_productSelection extends Setup {
 	 	Robot robot = new Robot();
 	 	Thread.sleep(2000);
 	 	
+	 	System.out.println(" Switch to Pop up page ");
+		
+		System.out.println(" Robot Started ");
+	 	robot.keyPress(KeyEvent.VK_ESCAPE);
+	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
+	 	
+	 	System.out.println(" Robot Ended ");
 	 	
 	 	
 		ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
@@ -63,15 +70,7 @@ public class Membershipbill_productSelection extends Setup {
 		
 		ArrayList<String> print = new ArrayList<String>(wd.getWindowHandles());
 		wd.switchTo().window(print.get(1));
-		
-		System.out.println(" Switch to Pop up page ");
-		
-		System.out.println(" Robot Started ");
-	 	robot.keyPress(KeyEvent.VK_ESCAPE);
-	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
-	 	
-	 	System.out.println(" Robot Ended ");
-		
+
 	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
 
 	 	System.out.println(b);
@@ -97,11 +96,6 @@ public class Membershipbill_productSelection extends Setup {
 	 		System.out.println("Bill Not Found");
 	 	}
 	 	
-	 	
-	 
-		
-
-	
   }
 	  
   }
