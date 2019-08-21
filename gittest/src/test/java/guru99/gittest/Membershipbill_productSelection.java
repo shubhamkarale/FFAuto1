@@ -50,7 +50,7 @@ public class Membershipbill_productSelection extends Setup {
 	  
 	  Thread.sleep(2000);
 	  
-	  wd.findElement(By.id("BtnSubmit")).click();
+	  wd.findElement(By.xpath("/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/div[22]/div[1]/div[1]/form[1]/div[3]/div[1]/div[4]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/input[1]")).click();
 	 	
 	 	Thread.sleep(5000);
 	 	
