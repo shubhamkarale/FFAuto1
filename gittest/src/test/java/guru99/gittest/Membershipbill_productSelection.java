@@ -50,6 +50,8 @@ public class Membershipbill_productSelection extends Setup {
 	  wd.findElement(By.id("BtnSubmit")).click();
 	 	
 	 	Thread.sleep(5000);
+	 	
+		System.out.println("Bill Created SuccessFully");
 //	 	
 //	 	Robot robot = new Robot();
 //	 	Thread.sleep(2000);
@@ -90,7 +92,7 @@ public class Membershipbill_productSelection extends Setup {
 //	 	System.out.println(BillNo);
 //	 	
 //	 	if(BillNo.contains(b)) {
-	 		System.out.println("Bill Created SuccessFully");
+	 	
 //	 	}else {
 //	 	
 //	 		System.out.println("Bill Not Found");
