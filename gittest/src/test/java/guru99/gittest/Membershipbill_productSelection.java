@@ -53,14 +53,22 @@ public class Membershipbill_productSelection extends Setup {
 //	 	
 	 	Robot robot = new Robot();
 	 	Thread.sleep(2000);
+	 	
+	 	System.out.println(" Robot Started ");
 	 	robot.keyPress(KeyEvent.VK_ESCAPE);
 	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
+	 	
+	 	System.out.println(" Robot Ended ");
 	 	
 		ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
 		wd.switchTo().window(tabs4.get(0));
 		
+		System.out.println(" Switch to purchase page ");
+		
 		ArrayList<String> print = new ArrayList<String>(wd.getWindowHandles());
 		wd.switchTo().window(print.get(1));
+		
+		System.out.println(" Switch to Pop up page "); 
 		
 	 	String b = wd.findElement(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]")).getText().substring(1);
 
