@@ -73,6 +73,8 @@ public class Membershipbill_productSelection extends Setup {
 		
 		ArrayList<String> print = new ArrayList<String>(wd.getWindowHandles());
 		wd.switchTo().window(print.get(1));
+		
+		Thread.sleep(2000);
 
 	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
 
