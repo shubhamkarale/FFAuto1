@@ -72,7 +72,7 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	System.out.println(" Robot Ended ");
 		
-	 	String b = wd.findElement(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]")).getText().substring(1);
+	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
 
 	 	System.out.println(b);
 		
