@@ -4,11 +4,11 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.python.modules.thread.thread;
 import org.testng.annotations.Test;
 
 public class Membershipbill_productSelection extends Setup {
@@ -52,49 +52,48 @@ public class Membershipbill_productSelection extends Setup {
 	  
 	  wd.findElement(By.xpath("/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/div[22]/div[1]/div[1]/form[1]/div[3]/div[1]/div[4]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/input[1]")).click();
 	 	
-	 	Thread.sleep(5000);
+	 	Thread.sleep(5000);	
 	 	
-		System.out.println("Bill Created SuccessFully");
-//	 	
-//	 	Robot robot = new Robot();
-//	 	Thread.sleep(2000);
-//	 	
-//	 	System.out.println(" Switch to Pop up page ");
-//		
-//		System.out.println(" Robot Started ");
-//	 	robot.keyPress(KeyEvent.VK_ESCAPE);
-//	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
-//	 	
-//	 	System.out.println(" Robot Ended ");
-//	 	
-//	 	
-//		ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
-//		wd.switchTo().window(tabs4.get(0));
-//		
-//		System.out.println(" Switch to purchase page ");
-//		
-//		ArrayList<String> print = new ArrayList<String>(wd.getWindowHandles());
-//		wd.switchTo().window(print.get(1));
-//
-//	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
-//
-//	 	System.out.println(b);
-//		
-//		wd.close();
-//		
-//		ArrayList<String> main = new ArrayList<String>(wd.getWindowHandles());
-//		wd.switchTo().window(main.get(0));
-//	 	
-//	 	wd.findElement(By.id("Purchase_History")).click();
-//	 	
-//	 	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("createNewmembership")));
-//	 	
-//	 	String BillNo = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
-//	 			+ "/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/div[1]/span[1]/span[1]"))).getText();
-//	 	
-//	 	System.out.println(BillNo);
-//	 	
-//	 	if(BillNo.contains(b)) {
+	 	Robot robot = new Robot();
+	 	Thread.sleep(1000);
+	 	
+	 	System.out.println(" Switch to Pop up page ");
+		
+		System.out.println(" Robot Started ");
+	 	robot.keyPress(KeyEvent.VK_ESCAPE);
+	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
+	 	
+	 	System.out.println(" Robot Ended ");
+	 	
+	 	
+		ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
+		wd.switchTo().window(tabs4.get(0));
+		
+		System.out.println(" Switch to purchase page ");
+		
+		ArrayList<String> print = new ArrayList<String>(wd.getWindowHandles());
+		wd.switchTo().window(print.get(1));
+
+	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
+
+	 	System.out.println(b);
+		
+		wd.close();
+		
+		ArrayList<String> main = new ArrayList<String>(wd.getWindowHandles());
+		wd.switchTo().window(main.get(0));
+	 	
+	 	wd.findElement(By.id("Purchase_History")).click();
+	 	
+	 	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("createNewmembership")));
+	 	
+	 	String BillNo = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+	 			+ "/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/div[1]/span[1]/span[1]"))).getText();
+	 	
+	 	System.out.println(BillNo);
+	 	
+	 	if(BillNo.contains(b)) {
+	 	System.out.println("Bill Created SuccessFully");
 	 	
 //	 	}else {
 //	 	
@@ -105,3 +104,4 @@ public class Membershipbill_productSelection extends Setup {
 	  
   }
 
+}
