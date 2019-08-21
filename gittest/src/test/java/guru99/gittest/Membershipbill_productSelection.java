@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.python.modules.thread.thread;
 import org.testng.annotations.Test;
 
 public class Membershipbill_productSelection extends Setup {
@@ -47,7 +48,9 @@ public class Membershipbill_productSelection extends Setup {
   
   public void SaveBill() throws InterruptedException, AWTException {
 	  
-	  wd.findElement(By.xpath("//input[@id='BtnSubmit']")).click();
+	  Thread.sleep(2000);
+	  
+	  wd.findElement(By.id("BtnSubmit")).click();
 	 	
 	 	Thread.sleep(5000);
 	 	
