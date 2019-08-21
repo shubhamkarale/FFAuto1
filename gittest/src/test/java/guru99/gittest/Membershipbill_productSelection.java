@@ -54,47 +54,47 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	Thread.sleep(5000);	
 	 	
-	 	Robot robot = new Robot();
-	 	Thread.sleep(1000);
-	 	
-	 	System.out.println(" Switch to Pop up page ");
-		
-		System.out.println(" Robot Started ");
-	 	robot.keyPress(KeyEvent.VK_ESCAPE);
-	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
-	 	
-	 	System.out.println(" Robot Ended ");
-	 	
-	 	
-		ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
-		wd.switchTo().window(tabs4.get(0));
-		
-		System.out.println(" Switch to purchase page ");
-		
-		ArrayList<String> print = new ArrayList<String>(wd.getWindowHandles());
-		wd.switchTo().window(print.get(1));
-		
-		Thread.sleep(2000);
-
-	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
-
-	 	System.out.println(b);
-		
-		wd.close();
-		
-		ArrayList<String> main = new ArrayList<String>(wd.getWindowHandles());
-		wd.switchTo().window(main.get(0));
-	 	
-	 	wd.findElement(By.id("Purchase_History")).click();
-	 	
-	 	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("createNewmembership")));
-	 	
-	 	String BillNo = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
-	 			+ "/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/div[1]/span[1]/span[1]"))).getText();
-	 	
-	 	System.out.println(BillNo);
-	 	
-	 	if(BillNo.contains(b)) {
+//	 	Robot robot = new Robot();
+//	 	Thread.sleep(1000);
+//	 	
+//	 	System.out.println(" Switch to Pop up page ");
+//		
+//		System.out.println(" Robot Started ");
+//	 	robot.keyPress(KeyEvent.VK_ESCAPE);
+//	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
+//	 	
+//	 	System.out.println(" Robot Ended ");
+//	 	
+//	 	
+//		ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
+//		wd.switchTo().window(tabs4.get(0));
+//		
+//		System.out.println(" Switch to purchase page ");
+//		
+//		ArrayList<String> print = new ArrayList<String>(wd.getWindowHandles());
+//		wd.switchTo().window(print.get(1));
+//		
+//		Thread.sleep(2000);
+//
+//	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
+//
+//	 	System.out.println(b);
+//		
+//		wd.close();
+//		
+//		ArrayList<String> main = new ArrayList<String>(wd.getWindowHandles());
+//		wd.switchTo().window(main.get(0));
+//	 	
+//	 	wd.findElement(By.id("Purchase_History")).click();
+//	 	
+//	 	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("createNewmembership")));
+//	 	
+//	 	String BillNo = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
+//	 			+ "/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/div[1]/span[1]/span[1]"))).getText();
+//	 	
+//	 	System.out.println(BillNo);
+//	 	
+//	 	if(BillNo.contains(b)) {
 	 	System.out.println("Bill Created SuccessFully");
 	 	
 //	 	}else {
@@ -106,4 +106,3 @@ public class Membershipbill_productSelection extends Setup {
 	  
   }
 
-}
