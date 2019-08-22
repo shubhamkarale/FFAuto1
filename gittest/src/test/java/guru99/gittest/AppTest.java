@@ -49,7 +49,6 @@ public void MemberCreation() throws IOException, InterruptedException, AWTExcept
 	mb.Product();
 	mb.FullMultiPay();
 	mb.SaveBill();	
-
 }
 
 //@Test (priority=1) read the data from excel
@@ -60,16 +59,5 @@ public void MemberCreation() throws IOException, InterruptedException, AWTExcept
 //	url.CreateMembershipbill();
 //	
 //}
-
-  @BeforeTest
-  public void beforeTest() {
-
-  }
-
-  @AfterTest
-  public void afterTest() {
-	  
-	 
-  }
 
 }
