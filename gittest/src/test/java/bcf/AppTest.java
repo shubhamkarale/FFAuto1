@@ -1,4 +1,4 @@
-package guru99.gittest;
+package bcf;
 
 import org.testng.annotations.Test;
 
