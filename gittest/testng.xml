@@ -1,16 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
 
-<suite thread-count="1" verbose="1" name="Gmail Suite" annotations="JDK" parallel="tests">
+<suite thread-count="1" verbose="1" name="Fitnessforce Suite" annotations="JDK" parallel="tests">
          
   <test name="AppTest">
 	 <classes>
-	   <class name="guru99.gittest.AppTest"/>
+	   <class name="bcf.AppTest"/>
 	 </classes>
    </test>
-   
-  <test name="Fitnessforce">
-     <classes>
-       <class name="guru99.gittest.EnquiryCreation"/>
-     </classes>
-   </test>
+
 </suite>
