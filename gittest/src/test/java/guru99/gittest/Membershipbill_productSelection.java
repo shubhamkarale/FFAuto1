@@ -63,7 +63,6 @@ public class Membershipbill_productSelection extends Setup {
 		System.out.println(tabcount);
 		wd.switchTo().window(tabs4.get(tabcount - 1));	
 		
-		
 	 	System.out.println(" Switch to Pop up page ");
 		
 	 	Robot robot = new Robot();
@@ -77,8 +76,10 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	System.out.println(" Robot Ended ");
 	 	
-//	 	ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());
-//	 	int Window2 = tabs5.size();
+		ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());
+		int tabcount2 = tabs5.size();
+		System.out.println(tabcount2);
+		wd.switchTo().window(tabs5.get(tabcount2 - 1));
 //	 	
 //	 	System.out.println(Window2);
 //	 	
@@ -93,7 +94,7 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	String b = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr/td[2]/div[2]"))).getText().substring(1);
 
-	 	System.out.println(b);
+//	 	System.out.println(b);
 
 	 	wd.get("https://demo.fitnessforce.com/clientview.aspx?pagevalue=1&enquiryid="+CurrentUrl+"&tenantid=460");
 	 	
@@ -114,7 +115,7 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	String newStr = Billid.substring(0, Billid.indexOf(" | ")).trim();
 	 	
-	 	System.out.println(newStr.length());
+//	 	System.out.println(newStr.length());
 	 	
 	 	if(b.matches(newStr)) {
 	 		
