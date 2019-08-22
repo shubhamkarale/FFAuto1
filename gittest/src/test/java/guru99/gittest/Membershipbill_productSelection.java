@@ -56,25 +56,25 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	String CurrentUrl = wd.getCurrentUrl().substring(80, 88);
 	 	
-	 	System.out.println(CurrentUrl);
+//	 	System.out.println(CurrentUrl);
 
 	 	ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
 		int tabcount = tabs4.size();
 		System.out.println(tabcount);
 		wd.switchTo().window(tabs4.get(tabcount - 1));	
 		
-	 	System.out.println(" Switch to Pop up page ");
+//	 	System.out.println(" Switch to Pop up page ");
 		
 	 	Robot robot = new Robot();
 	 	Thread.sleep(3000);
 	 	
-		System.out.println(" Robot Started ");
+//		System.out.println(" Robot Started ");
 		
 	 	robot.keyPress(KeyEvent.VK_ESCAPE);
 	 	
 	 	robot.keyRelease(KeyEvent.VK_ESCAPE);
 	 	
-	 	System.out.println(" Robot Ended ");
+//	 	System.out.println(" Robot Ended ");
 	 	
 		ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());
 		int tabcount2 = tabs5.size();
