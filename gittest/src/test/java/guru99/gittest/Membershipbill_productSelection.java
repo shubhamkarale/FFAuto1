@@ -54,7 +54,7 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	Thread.sleep(5000);	
 	 	
-	 	String CurrentUrl = wd.getCurrentUrl().substring(80, 88);
+	 	String MemberID = wd.getCurrentUrl().substring(80, 88);
 	 	
 //	 	System.out.println(CurrentUrl);
 
@@ -78,7 +78,7 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 		ArrayList<String> tabs5 = new ArrayList<String>(wd.getWindowHandles());
 		int tabcount2 = tabs5.size();
-		System.out.println(tabcount2);
+//		System.out.println(tabcount2);
 		wd.switchTo().window(tabs5.get(tabcount2 - 1));
 //	 	
 //	 	System.out.println(Window2);
@@ -96,7 +96,7 @@ public class Membershipbill_productSelection extends Setup {
 
 //	 	System.out.println(b);
 
-	 	wd.get("https://demo.fitnessforce.com/clientview.aspx?pagevalue=1&enquiryid="+CurrentUrl+"&tenantid=460");
+	 	wd.get("https://demo.fitnessforce.com/clientview.aspx?pagevalue=1&enquiryid="+MemberID+"&tenantid=460");
 	 	
 	 	wait.until(ExpectedConditions.presenceOfElementLocated(By.id("Purchase_History"))).click();
 	 	
@@ -119,11 +119,11 @@ public class Membershipbill_productSelection extends Setup {
 	 	
 	 	if(b.matches(newStr)) {
 	 		
-	 	System.out.println("Bill Created SuccessFully");
+	 	System.out.println("Bill Created SuccessFully. Your Bill Id - " + b);
 	 	
 	 	}else {
 	 	
-	 		System.out.println("Bill Not Found");
+	 		System.out.println("Bill Not Found or Failed for Member ID - " + MemberID);
 	 	}
 	 	
 	 	
