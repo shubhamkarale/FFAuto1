@@ -60,7 +60,7 @@ public class Membershipbill_productSelection extends Setup {
 
 	 	ArrayList<String> tabs4 = new ArrayList<String>(wd.getWindowHandles());
 		int tabcount = tabs4.size();
-		System.out.println(tabcount);
+//		System.out.println(tabcount);
 		wd.switchTo().window(tabs4.get(tabcount - 1));	
 		
 //	 	System.out.println(" Switch to Pop up page ");
@@ -105,7 +105,7 @@ public class Membershipbill_productSelection extends Setup {
 	 	String Billid = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("/html[1]/body[1]/div[3]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]"
 	 			+ "/div[2]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]/div[1]/span[1]/span[1]"))).getText();
 	 	
-	 	System.out.println(Billid.length());
+//	 	System.out.println(Billid.length());
 	 	
 //		String[] arrSplit = Billid.split(" | ");
 //		     
