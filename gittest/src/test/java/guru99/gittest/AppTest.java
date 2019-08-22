@@ -2,12 +2,8 @@ package guru99.gittest;
 
 import org.testng.annotations.Test;
 
-import org.testng.annotations.BeforeTest;
-
 import java.awt.AWTException;
 import java.io.IOException;
-
-import org.testng.annotations.AfterTest;
 
 public class AppTest extends Setup  
 
@@ -16,29 +12,29 @@ public class AppTest extends Setup
 	public Form fm = new Form();  
 	public Membershipbill_productSelection mb = new Membershipbill_productSelection();
 	
-//@Test (priority=1)
-//
-//public void EnquiryCreation() throws IOException, InterruptedException {
-//	
-//	url.CreateEnquiry();
-//	fm.formfilling();
-//	fm.AddFollowUp();
-//	url.ETMSubmit();  
-//	
-//  }
-//
-//@Test (priority=2)
-//
-//public void TrialCreation() throws IOException, InterruptedException {
-//	
-//	url.CreateTrial();
-//	fm.formfilling();
-//	fm.AddFollowUp(); 
-//	url.ETMSubmit();
-//	url.SaveTrial();
-//}
-
 @Test (priority=1)
+
+public void EnquiryCreation() throws IOException, InterruptedException {
+	
+	url.CreateEnquiry();
+	fm.formfilling();
+	fm.AddFollowUp();
+	url.ETMSubmit();  
+	
+  }
+
+@Test (priority=2)
+
+public void TrialCreation() throws IOException, InterruptedException {
+	
+	url.CreateTrial();
+	fm.formfilling();
+	fm.AddFollowUp(); 
+	url.ETMSubmit();
+	url.SaveTrial();
+}
+
+@Test (priority=3)
 
 public void MemberCreation() throws IOException, InterruptedException, AWTException {
 	
